@@ -19,7 +19,7 @@ Here is the code:
 
 
 
-method:A method is an action that Python can preform on a piece of data. Every method is followed by a set of parentheses, because
+method: A method is an action that Python can preform on a piece of data. Every method is followed by a set of parentheses, because
 methods often need additional information to do their work. That information is provided inside the parentheses.  The title() function doesn’t need any additional information, so its parentheses are empty. 
 
 *Tips* ：you can change a string to all uppercase or all lowercase letters like this:
