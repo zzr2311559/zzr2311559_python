@@ -1,5 +1,5 @@
 # zzr2311559_python
-record on my python learning process
+record on my python learning process based on PYTHON CRASH COURSE written by Eric Matthes
 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/zzr2311559/zzr2311559_python)
 ![GitHub issues](https://img.shields.io/github/issues/zzr2311559/zzr2311559_python)
