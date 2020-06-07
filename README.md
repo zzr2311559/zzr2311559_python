@@ -12,8 +12,11 @@ Here is the code:
       print(name.title())
 
 **name**      is the variable refers to the lowercase string "ada lovelace"
+
 **title()**   is a method 
+
 **.**         is a sign to tell python to make the **title()** method act on the variable **name**
+
 
 
 method:A method is an action that Python can preform on a piece of data. Every method is followed by a set of parentheses, because
