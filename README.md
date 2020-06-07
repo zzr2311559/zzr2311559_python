@@ -66,7 +66,7 @@ You can also combine *tabs* and *newlines* in a single string. The string **\n\t
 
 Python can look for extra whitespace on the right and left sides of a string. To ensure that no whitespace exists at the right or left end of a string, use the rstrip() or lstirp() method.If you want to strip both of them, use strip() method.
 
-Here is the code and it's result on terminal
+Here is the code and its result on terminal
 
       >>> favorite_language = ' python '
       >>> favorite_language
@@ -81,7 +81,6 @@ Here is the code and it's result on terminal
       'python'
 
 
-## Avoiding Syntax Errors with Strings
 
 
 
