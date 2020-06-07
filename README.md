@@ -62,10 +62,26 @@ You can also combine *tabs* and *newlines* in a single string. The string **\n\t
       print("User:\n\tZzr2311559\nGender:\n\tMale")
 
 
+## Stripping Whitespace
+
+Python can look for extra whitespace on the right and left sides of a string. To ensure that no whitespace exists at the right or left end of a string, use the rstrip() or lstirp() method.If you want to strip both of them, use strip() method.
+
+Here is the code and it's result on terminal
+
+      >>> favorite_language = ' python '
+      >>> favorite_language
+      ' python '
+      >>> favorite_language.rstrip()
+      ' python'
+      >>> favorite_language
+      'python '#......................................as you can see, you actually only execute this command instead of changing the variable  **favorite_language** itself 
+      >>> favorite_language.lstrip()
+      'python '
+      >>> favorite_language.strip()
+      'python'
 
 
-
-
+## Avoiding Syntax Errors with Strings
 
 
 
