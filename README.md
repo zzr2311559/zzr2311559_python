@@ -203,6 +203,117 @@ You can access this brief set of principles for writing good Python code by ente
       If the implementation is easy to explain, it may be a good idea.
       Namespaces are one honking great idea -- let's do more of those!
 
+------
+
+
+## List
+
+A list is a collection of items in a particular order. You can make a list that includes the letters of the alphabet, the digits from 0–9, or the names of all the people in your family. You can put anything you want into a list, it's a good idea to make the name of your list plural, such as **letters** , **digits**, or **names**. 
+
+In Python, square brackets ([]) indicate a list, and individual elements in the list are separated by commas. Here is an example:
+
+      riders = ['zio','decade','faiz','01']
+      print(riders)
+
+and Python returns its representation of the list as: ['zio','decade','faiz','01']  which is not the format you want your users to see
+So this time try this:
+
+      riders = ['zio','decade','faiz','01']
+      print(riders[0].title())
+      
+you'll get **Zio** only! But why 0 instead of 1?
+
+Python considers the first item in a list to be at position 0, not position 1. This is true of most programming languages, and the reason has to do with how the list operations are implemented at a lower level. Especially, by asking for the item at index -1, Python always returns the last item in the list:
+
+      riders = ['zio','decade','faiz','01']
+      print(riders[-1])
+
+This convention extends to other negative index values as well. The index -2 returns the second item from the end of the list, the index -3 returns the third item from the end, and so forth.
+
+You can also use individual values from a list just as you would any other variable. For example, you can use f-strings to create a message based on a value from a list.
+
+      riders = ['zio','decade','faiz','01']
+      message = f"My favorite kamen rider is {riders[-2].title()}!"
+      print(message)
+      
+      
+## Changing, Adding, and Removing Elements       
+
+Most lists you create will be dynamic, meaning you’ll build a list and then add and remove elements from it as your program runs its course. 
+
+
+### Modifying Elements in a List
+
+The syntax for modifying an element is similar to the syntax for accessing an element in a list. To change an element, use the name of the list followed by the index of the element you want to change, and then provide the new value you want that item to have:
+
+      riders = ['zio','faiz','01']
+      riders[0] = 'decade'
+      print(riders)
+
+### Adding Elements to a List
+
+ Python provides several ways to add new data to existing lists.
+
+
+#### Appending Elements to the End of a List
+
+The simplest way to add a new element to a list is to append the item to the list. When you append an item to a list, the new element is added to the end of the list:
+
+     riders = ['zio','faiz','01']
+     riders.append('decade')
+     print(riders)
+
+The append() method makes it easy to build lists dynamically. For example, you can start with an empty list and then add items to the list using a series of append() calls. 
+
+      riders = []
+      
+      riders.append('zio')
+      riders.append('decade')
+      riders.append('faiz')
+      print(riders)
+
+Building lists this way is very common, because you often won’t know the data your users want to store in a program until after the program is running. To put your users in control, start by defining an empty list that will hold the users’ values. Then append each new value provided to the list you just created.
+
+
+#### Inserting Elements into a List
+
+You can add a new element at any position in your list by using the insert() method. You do this by specifying the index of the new element and the value of the new item.
+
+      riders = ['zio','01','faiz']
+      riders.insert(1,'decade')
+      print(riders)
+
+In this example, the code inserts the value 'decade' at the position 1 of the list. The **insert()** method opens a space at position 1 and stores the value 'decade' at that location.
+
+
+### Removing Elements from a List
+
+In Python, you can remove anitem according to its position in the list or according to its value.
+
+
+#### Removing an Item Using the del Statement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
