@@ -38,7 +38,7 @@ Here is the code:
       full_name = f"{first_name} {last_name}"
       print(full_name)
 
-To insert a variable’s value into a string, place the letter f immediately before the opening quotation mark . Put braces around the name or names of any variable you want to use inside the string. Python will replace each variable with its value when the string is displayed.
+To insert a variable’s value into a string, place the letter f immediately before the opening quotation mark. Put braces around the name or names of any variable you want to use inside the string. Python will replace each variable with its value when the string is displayed.
 
 These strings are called **f-strings**. The f is for format, because Python formats the string by replacing the name of any variable in braces with its value.
 
@@ -79,6 +79,130 @@ Here is the code and its result on terminal
       'python '
       >>> favorite_language.strip()
       'python'
+
+
+## Number
+
+
+### Integers
+
+You can add( + ),subtract( - ),multiply( * ), and divide(/) integers in Python. Moreover, Python uses two multiplication symbols to represent exponents. Python supports the order of operations too, so you can use multiple operations in one expression. You can also use parentheses to modify the order of operations so Python can evaluate your expression in the order you specify.
+
+Here is the examples and results on terminal:
+
+      >>> 2 + 3
+      5
+      >>> 3 - 2
+      1
+      >>> 2 * 3
+      6
+      >>> 3 / 2
+      1.5
+      
+      >>> 3 ** 2
+      9
+      >>> 3 ** 3
+      27
+      >>> 10 ** 6
+      1000000 
+      
+      >>> 2 + 3*4
+      14
+      >>> (2 + 3) * 4
+      20
+
+
+### Floats
+
+Python calls any number with a decimal point a float. This term is used in most programming languages, and it refers to the fact that a decimal point can appear at any position in a number.
+
+Mostly, you can simply use float as you will, but sometimes you can get an arbitrary number of decimal places in your answer:
+ 
+      >>> 0.2 + 0.1
+      0.30000000000000004
+      >>> 3 * 0.1
+      0.30000000000000004 
+      
+This happens in all languages and is of little concern. Python tries to find a way to represent the result as precisely as possible, which is sometimes difficult given how computers have to represent numbers internally.      
+
+
+### Integers and Floats
+
+Python defaults to a float in any operation that uses a float, even if the output is a whole number. For example:
+
+      >>> 4/2
+      2.0
+      >>> 1 + 2.0
+      3.0
+      >>> 2 * 3.0
+      6.0
+      >>> 3.0 ** 2
+      9.0
+
+
+### Underscores in Numbers
+
+When you’re writing long numbers, you can group digits using underscoresto make large numbers more readable:
+
+      >>> universe_age = 14_000_000_000
+
+When you print a number that was defined using underscores, Pythonprints only the digits:
+
+      >>> print(universe_age)
+      14000000000
+
+Python ignores the underscores when storing these kinds of values. Even if you don’t group the digits in threes, the value will still be unaffected. To Python, 1000 is the same as 1_000, which is the same as 10_00. This feature works for integers and floats, but it’s only available in Python 3.6 and later.
+
+
+### Multiple Assighment
+
+You can assign values to more than one variable using just a single line. This can help shorten your programs and make them easier to read; you’ll use this technique most often when initializing a set of numbers.
+
+      >>> x, y, z = 0, 0, 0   
+
+You need to separate the variable names with commas, and do the same with the values, and Python will assign each value to its respectively positioned variable. As long as the number of values matches the number of variables, Python will match them up correctly.
+
+
+### Constants
+
+A constant is like a variable whose value stays the same throughout the life of a program. Python doesn’t have built-in constant types, but Python programmers use all capital letters to indicate a variable should be treated as a constant and never be changed:
+
+MAX_CONNECTIONS = 5000
+
+
+## Comments
+
+In Python, the hash mark (#) indicates a comment. Anything following a hash mark in your code is ignored by the Python interpreter. 
+
+When you’re determining whether to write a comment, ask yourself if you had to consider several approaches before coming up with a reasonable way to make something work; if so, write a comment about your solution. It’s much easier to delete extra comments later on than it is to go back and write comments for a sparsely commented program.
+
+
+## The Zen of Python
+
+You can access this brief set of principles for writing good Python code by entering **import this** into your interpreter.
+
+      The Zen of Python, by Tim Peters
+      
+      Beautiful is better than ugly.
+      Explicit is better than implicit.
+      Simple is better than complex.
+      Complex is better than complicated.
+      Flat is better than nested.
+      Sparse is better than dense.
+      Readability counts.
+      Special cases aren't special enough to break the rules.
+      Although practicality beats purity.
+      Errors should never pass silently.
+      Unless explicitly silenced.
+      In the face of ambiguity, refuse the temptation to guess.
+      There should be one-- and preferably only one --obvious way to do it.
+      Although that way may not be obvious at first unless you're Dutch.
+      Now is better than never.
+      Although never is often better than *right* now.
+      If the implementation is hard to explain, it's a bad idea.
+      If the implementation is easy to explain, it may be a good idea.
+      Namespaces are one honking great idea -- let's do more of those!
+
 
 
 
