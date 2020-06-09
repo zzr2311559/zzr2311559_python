@@ -293,31 +293,50 @@ In Python, you can remove anitem according to its position in the list or accord
 
 #### Removing an Item Using the del Statement
 
+If you know the position of the item you want to remove from a list, you can use the **del** statement.:
+
+      riders = ['zio','decade','faiz']
+      del riders[0]
+      print(riders)
+      
+#### Removing an Item Using the pop() Method      
+
+The pop() method removes the last item in a list, but it lets you work with that item after removing it. The term pop comes from thinking of a list as a stack of items and popping one item off the top of the stack. In this analogy, the top of a stack corresponds to the end of a list.
+
+      riders = ['zio','decade','faiz']
+      popped_riders = riders.pop()
+      print(riders)
+      print(popped_riders)
+      
+      
+#### Popping Items from any Position in a List
+
+You can use pop() to remove an item from any position in a list by including the index of the item you want to remove in parentheses
+
+      riders = ['zio','decade','faiz']
+      popped_riders = riders.pop(0)
+      print(riders)
+      print(popped_riders)
+
+Remember that each time you use pop(), the item you work with is no longer stored in the list. If you’re unsure whether to use the del statement or the pop() method, here’s a simple way to decide: when you want to delete an item from a list and not use that item in any way, use the del statement; if you want to use an item as you remove it, use the pop() method.
 
 
+#### Removing an Item by Value
 
+Sometimes you won’t know the position of the value you want to remove from a list. If you only know the value of the item you want to remove, you can use the remove() method.
 
+      riders = ['zio','decade','faiz']
+      riders.remove('faiz')
+      print(riders)
+      
+You can also use the remove() method to work with a value that’s being removed from a list. 
 
+      riders = ['zio','decade','faiz']
+      too_fast = "faiz"
+      riders.remove(too_fast)
+      print(f"My favorite kamen rider is {too_fast.title()}!")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*Tips*:The remove() method deletes only the first occurrence of the value you specify. If there’s a possibility the value appears more than once in the list, you’ll need to use a loop to make sure all occurrences of the value are removed. 
 
 
 
